@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #fff;
+  }
+
+  body.home{
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #fff;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  
+  .sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #5ED9E1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  .sidebar p{
+    text-align: center;
+    color: white;
+  }
+  .material-icons{
+    padding: auto;
+  }
+  
+  .sidebar a {
+    display: block;
+    color: rgb(255, 255, 255);
+    padding: 16px;
+    text-decoration: none;
+  }
+   
+  .sidebar a.active {
+    background-color: #ffffff;
+    color: #5ED9E1;
+    border-right: 2px solid;
+  }
+  
+  .sidebar a:hover:not(.active) {
+    background-color: rgb(255, 255, 255);
+    color: #5ED9E1;
+    border-right: 2px solid;
+  }
+  
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  div.content h1{
+    text-align: center;
+  }
+  div.content button {
+    border-collapse:collapse ;
+  }
+  a:link { text-decoration: none; }
+  a:visited { text-decoration: none; }
+  a:hover { text-decoration: none; }
+  a:active { text-decoration: none; }
+  a{
+    color: #5ED9E1;
+  }
+  footer {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #5ED9E1;
+    color: #fff;
+    text-align: center;
+    height: 40px;
+  }
+  
+
+.content.boxes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.content .boxes .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    width: auto;
+    padding: 15px 30px;
+    background-color: #5ED9E1;
+    color: white;
+}
+.boxes .box i{
+    font-size: 35px;
+    color: white
+}
+.boxes .box .text{
+    white-space: nowrap;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+}
+.boxes .box .number{
+    font-size: 40px;
+    font-weight: 500;
+    color: white;
+}
+.boxes .box.box2{
+    background-color: #5ED9E1;
+    color: white;
+}
+
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  @media (max-width: 780px) {
+    .content .boxes .box{
+        width: auto;
+        margin-top: 15px;
+      }
+    }
+    @media (max-width: 560px) {
+      .content .boxes .box{
+          width: auto ;
+      }
+}
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
